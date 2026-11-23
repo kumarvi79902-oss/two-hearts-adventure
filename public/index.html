@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#87ceeb">
+  <title>Two Hearts Adventure</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game"></div>
+
+  <div id="status">Connecting...</div>
+
+  <div id="controls">
+    <div id="joystick">
+      <button id="forward">▲</button>
+      <div class="middle-controls">
+        <button id="left">◀</button>
+        <button id="right">▶</button>
+      </div>
+      <button id="backward">▼</button>
+    </div>
+
+    <button id="jump">JUMP</button>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script type="module" src="game.js"></script>
+</body>
+</html>
